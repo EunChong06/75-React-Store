@@ -39,14 +39,14 @@ const Categories = () => {
         <div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-2">
+                    <div className="col-md-2">
                         <a href="/"><img src="https://fakestoreapi.com/icons/logo.png" width={200} height={100}></img></a>
                     </div>
-                    <div className="col-8 mt-3">
+                    <div className="col-md-8 mt-3">
                         <h1>Online store</h1>
                         <hr />
                     </div>
-                    <div className="col-2"></div>
+                    <div className="col-md-2"></div>
                 </div>
                 <div className="row my-4 text-center">
                     {categories.length > 0 ?
@@ -54,7 +54,7 @@ const Categories = () => {
                             {categories.map((item) =>
 
 
-                                <div className="col-3"><a href={"/categories/" + item}>{item}</a></div>
+                                <div className="col-md-3"><a href={"/categories/" + item}>{item}</a></div>
 
                             )
                             }
@@ -70,7 +70,7 @@ const Categories = () => {
                     {list.length > 0 ?
                         <>
                             {list.map((item) =>
-                                <div className="col-3">
+                                <div className="col-md-3">
                                     <img src={item.image} width={200} height={200} />
                                     <br />
                                     <a href={"/thing/" + item.id}>{item.title}</a>
